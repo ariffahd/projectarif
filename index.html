@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday, Cantikkkuu :3 !</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Selamat Ulang Tahun, Cantikkuuuu! 💖</h1>
+
+  <div class="content">
+    <p>Alhamdullillah tidak terasa bby dah ulang tahun ke 20 tahun sayang, Maaf sayang kali ini aku belum bisa ktemuin bby d bengkulu, selamat yacantik hari makin berlalu umur bby makin bertambah makin cantik ajaa hihihii, cayangg maaf ya aku blum ad kado buat bby tapi inilah kado aku untuk bby sayangg emng tidak mahal syang, tapi aku mengusahakan apa yang bisa aku usahakan untk bby sayanggg emng bukan berbentuk uang sayanggg tapi percayalah inilah salah satu usaha aku untuk bby sayangg 💌</p>
+    
+    <!-- Tambahkan foto kamu -->
+    <img class="photo" src="FILE AIRF/arif.2.jpeg" alt="Foto Kita" width="150">
+    <img class="photo" src="FILE AIRF/WhatsApp Image 2025-07-23 at 09.00.41.jpeg" alt="Foto Kita" width="150">
+
+    <!-- Tambahkan lagu -->
+    <audio controls autoplay loop>
+      <source src="FILE AIRF/The 1975 - About You (Official).mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung audio.
+    </audio>
+  </div>
+
+  <!-- Love berjatuhan -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }
+    setInterval(createHeart, 200);
+  </script>
+
+</body>
+</html>

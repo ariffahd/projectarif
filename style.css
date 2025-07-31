@@ -1,0 +1,93 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #ffe4e1, #ffb6c1);
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 3em;
+  color: #e91e63;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Content Section */
+.content {
+  text-align: center;
+  color: #444;
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(255, 105, 180, 0.2);
+}
+
+/* Paragraphs */
+.content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Images */
+.photo {
+  margin: 10px;
+  max-width: 150px;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(255, 105, 180, 0.5);
+  transition: transform 0.3s ease;
+}
+.photo:hover {
+  transform: scale(1.05);
+}
+
+/* Audio */
+audio {
+  display: block;
+  margin: 30px auto 10px;
+  filter: drop-shadow(0 0 5px rgba(255, 105, 180, 0.3));
+}
+
+/* Jatuhan Love */
+.heart {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  animation: fall 5s linear infinite;
+  background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Fade in saat buka */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
